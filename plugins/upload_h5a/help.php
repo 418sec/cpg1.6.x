@@ -20,7 +20,7 @@ $hfile = file_exists($hpath.$lang.'.html') ? $lang.'.html' : 'english.html';
 <html lang="en">
 <head>
 <title></title>
-<link rel="stylesheet" type="text/css" href="<?php echo $styles; ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo htmlentities($styles); ?>">
 </head>
 <body class="nobgimage">
 <?php readfile($hpath.$hfile); ?>
